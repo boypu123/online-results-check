@@ -5,23 +5,29 @@ import { sha256 } from 'js-sha256'
 import axios from 'axios'
 // Since we declared the two values as null, we need to pre-declare the type of the two values by using interface
 interface UserDetailsType{
-    candidateNumber: String | null
+    username: String | null
     password: String | null
 }
-const userDetails: UserDetailsType = reactive({ candidateNumber: null, password: null})
+const userDetails: UserDetailsType = reactive({ username: null, password: null})
 const message = ref()
 function sendData(){
-    if (userDetails.candidateNumber == null || userDetails.password==null){
+    if (userDetails.username == null || userDetails.password==null){
         message.value = "Please enter your login detail."
     }else{
+        // Send information to the server
         axios({
             method: 'post',
-            url: 'http://127.0.0.1:5000/login',
+            url: 'http://localhost:5000/login',
             data: {
-                candidateNumber: userDetails.candidateNumber.toString(), 	// user input from form
+                username: userDetails.username.toString(), 	// user input from form
                 password: sha256(userDetails.password.toString())	// sha256 of user input from form
             }
         })
+            .then(function(response){
+                if(response.data.passed == True){
+                    console.log("redirect")
+                }
+            })
     }
 }
 </script>
@@ -33,7 +39,7 @@ function sendData(){
         <h2>Online Results Checking Service</h2>
         <!-- The Login Form -->
         <form id="Login">
-            <input type="text" placeholder=" Candidate Number" class="InputBoxes" v-model="userDetails.candidateNumber"> <br>
+            <input type="text" placeholder=" Username" class="InputBoxes" v-model="userDetails.username"> <br>
             <input type="text" placeholder=" Password" class="InputBoxes" v-model="userDetails.password"> <br>
             {{ message }}
             <div id="Submit" @click="sendData()">Submit</div>
