@@ -62,3 +62,61 @@
 2023-07-02 14:14:35,086: INFO -  * Detected change in 'd:\\Codes\\Online Results Check\\server.py', reloading
 2023-07-02 14:14:35,565: INFO -  * Restarting with stat
 2023-07-02 14:14:43,168: INFO -  * Restarting with stat
+2023-07-02 18:36:48,229: INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2023-07-02 18:36:48,229: INFO - [33mPress CTRL+C to quit[0m
+2023-07-02 18:36:48,230: INFO -  * Restarting with stat
+2023-07-02 18:36:48,574: WARNING -  * Debugger is active!
+2023-07-02 18:36:48,577: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 18:37:04,863: INFO - 127.0.0.1 - - [02/Jul/2023 18:37:04] "[35m[1mOPTIONS /login HTTP/1.1[0m" 204 -
+2023-07-02 18:37:19,707: INFO - 127.0.0.1 - - [02/Jul/2023 18:37:19] "[35m[1mOPTIONS /login HTTP/1.1[0m" 204 -
+2023-07-02 18:37:21,045: INFO - 127.0.0.1 - - [02/Jul/2023 18:37:21] "[35m[1mOPTIONS /login HTTP/1.1[0m" 204 -
+2023-07-02 18:37:45,144: INFO -  * Detected change in 'd:\\Codes\\Online Results Check\\server.py', reloading
+2023-07-02 18:37:45,661: INFO -  * Restarting with stat
+2023-07-02 18:37:46,073: WARNING -  * Debugger is active!
+2023-07-02 18:37:46,075: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 18:37:47,906: INFO -  * Detected change in 'd:\\Codes\\Online Results Check\\server.py', reloading
+2023-07-02 18:37:48,169: INFO -  * Restarting with stat
+2023-07-02 18:37:48,590: WARNING -  * Debugger is active!
+2023-07-02 18:37:48,593: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 18:37:56,721: INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2023-07-02 18:37:56,723: INFO - [33mPress CTRL+C to quit[0m
+2023-07-02 18:37:56,723: INFO -  * Restarting with stat
+2023-07-02 18:37:57,080: WARNING -  * Debugger is active!
+2023-07-02 18:37:57,083: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 18:38:12,282: INFO - 127.0.0.1 - - [02/Jul/2023 18:38:12] "[35m[1mOPTIONS /login HTTP/1.1[0m" 204 -
+2023-07-02 18:38:12,547: ERROR - A person did not login successfully. The login creditals are incorrect. The username provided is: testingaccount.001
+2023-07-02 18:38:12,548: INFO - 127.0.0.1 - - [02/Jul/2023 18:38:12] "POST /login HTTP/1.1" 200 -
+2023-07-02 18:38:21,021: INFO - 127.0.0.1 - - [02/Jul/2023 18:38:21] "[35m[1mOPTIONS /login HTTP/1.1[0m" 204 -
+2023-07-02 18:38:21,333: ERROR - A person did not login successfully. The login creditals are incorrect. The username provided is: testingaccount.001
+2023-07-02 18:38:21,333: INFO - 127.0.0.1 - - [02/Jul/2023 18:38:21] "POST /login HTTP/1.1" 200 -
+2023-07-02 18:38:24,740: ERROR - A person did not login successfully. The login creditals are incorrect. The username provided is: testingaccount.001
+2023-07-02 18:38:24,741: INFO - 127.0.0.1 - - [02/Jul/2023 18:38:24] "POST /login HTTP/1.1" 200 -
+2023-07-02 18:38:25,937: ERROR - A person did not login successfully. The login creditals are incorrect. The username provided is: testingaccount.001
+2023-07-02 18:38:25,937: INFO - 127.0.0.1 - - [02/Jul/2023 18:38:25] "POST /login HTTP/1.1" 200 -
+2023-07-02 18:38:39,697: INFO - 127.0.0.1 - - [02/Jul/2023 18:38:39] "[35m[1mOPTIONS /login HTTP/1.1[0m" 204 -
+2023-07-02 18:38:39,960: ERROR - A person did not login successfully. The login creditals are incorrect. The username provided is: abc
+2023-07-02 18:38:39,960: INFO - 127.0.0.1 - - [02/Jul/2023 18:38:39] "POST /login HTTP/1.1" 200 -
+2023-07-02 18:38:40,551: ERROR - A person did not login successfully. The login creditals are incorrect. The username provided is: abc
+2023-07-02 18:38:40,551: INFO - 127.0.0.1 - - [02/Jul/2023 18:38:40] "POST /login HTTP/1.1" 200 -
+2023-07-02 18:38:53,423: INFO -  * Detected change in 'd:\\Codes\\Online Results Check\\server.py', reloading
+2023-07-02 18:38:53,757: INFO -  * Restarting with stat
+2023-07-02 18:38:54,200: WARNING -  * Debugger is active!
+2023-07-02 18:38:54,203: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 18:39:27,105: INFO -  * Detected change in 'd:\\Codes\\Online Results Check\\admin.py', reloading
+2023-07-02 18:39:27,287: INFO -  * Restarting with stat
+2023-07-02 18:39:27,622: WARNING -  * Debugger is active!
+2023-07-02 18:39:27,624: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 18:39:30,633: INFO -  * Detected change in 'd:\\Codes\\Online Results Check\\admin.py', reloading
+2023-07-02 18:39:31,190: INFO -  * Restarting with stat
+2023-07-02 18:39:31,590: WARNING -  * Debugger is active!
+2023-07-02 18:39:31,593: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 18:40:04,244: INFO - 127.0.0.1 - - [02/Jul/2023 18:40:04] "[35m[1mOPTIONS /login HTTP/1.1[0m" 204 -
+2023-07-02 18:40:04,524: INFO - 127.0.0.1 - - [02/Jul/2023 18:40:04] "POST /login HTTP/1.1" 200 -
+2023-07-02 18:40:04,579: INFO - 127.0.0.1 - - [02/Jul/2023 18:40:04] "[35m[1mOPTIONS /results HTTP/1.1[0m" 204 -
+2023-07-02 18:40:04,898: INFO - 127.0.0.1 - - [02/Jul/2023 18:40:04] "POST /results HTTP/1.1" 200 -
+2023-07-02 18:40:26,666: INFO - 127.0.0.1 - - [02/Jul/2023 18:40:26] "[35m[1mOPTIONS /login HTTP/1.1[0m" 204 -
+2023-07-02 18:40:26,974: INFO - 127.0.0.1 - - [02/Jul/2023 18:40:26] "POST /login HTTP/1.1" 200 -
+2023-07-02 18:40:27,237: INFO - 127.0.0.1 - - [02/Jul/2023 18:40:27] "[35m[1mOPTIONS /results HTTP/1.1[0m" 204 -
+2023-07-02 18:40:27,346: INFO - 127.0.0.1 - - [02/Jul/2023 18:40:27] "POST /results HTTP/1.1" 200 -

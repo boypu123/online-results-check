@@ -13,14 +13,14 @@ client = MongoClient("localhost", 27017)
 db = client.results_query
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5174"])
+CORS(app, origins=["http://localhost:5173"])
 
 @app.route('/login', methods=['POST', 'OPTIONS'])
 def login():
     # Handle CORS
     if request.method == 'OPTIONS':
         headers = {
-            'Access-Control-Allow-Origin': 'http://localhost:5174',
+            'Access-Control-Allow-Origin': 'http://localhost:5173',
             'Access-Control-Allow-Methods': 'POST',
             'Access-Control-Allow-Headers': 'Content-Type'
         }
@@ -46,12 +46,12 @@ def login():
         return response
 
 
-CORS(app, origins=["http://localhost:5174"])
+CORS(app, origins=["http://localhost:5173"])
 @app.route('/results', methods = ['POST','OPTIONS'])
 def results():
     if request.method == 'OPTIONS':
         headers = {
-            'Access-Control-Allow-Origin': 'http://localhost:5174',
+            'Access-Control-Allow-Origin': 'http://localhost:5173',
             'Access-Control-Allow-Methods': 'POST',
             'Access-Control-Allow-Headers': 'Content-Type'
         }
