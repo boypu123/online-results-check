@@ -24,7 +24,7 @@ def add_user(document):
 
 # Welcome
 print("Welcome to the admin panel.")
-choice = input("Please choose the action you want to perform:\n1) Add User\n2) Remove User\n3) Check User Details\n")
+choice = input("Please choose the action you want to perform:\n1) Add User/Change User Details\n2) Remove User\n3) Check User Details\n")
 
 if choice == "1":
     result_document = {'results':{}}
@@ -32,8 +32,7 @@ if choice == "1":
     # Series of inputs
     result_document['username'] = input("Please input username of the new user: ")
     if (db.login.find_one({'username': result_document['username']}) != None):
-        print("This username is already taken. Please try again.")
-        exit()
+        print("WARNING: This username is already taken. You are changing the user details.")
     login_document['username'] = result_document['username']
     login_document['name'] = input("Please input the name of the candidate: ")
     login_document['candidateNum'] = input("Please input the candidate number of the new user: ")
