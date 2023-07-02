@@ -48,7 +48,7 @@ npm run dev
 and run server.py just like how you run a normal Python file.
 
 ## Reminders
-Sometimes the port of the node.js server may not be 5174. In this case, go to server.py, modify every http://localhost:5174 to http://localhost:{insert the port where node.js server is running here}
+Sometimes the port of the node.js server may not be 5174. In this case, go to server.py, modify every http://localhost:5173 to http://localhost:{insert the port where node.js server is running here}
 
 ## Future Plans
 Add i18n support maybe.
