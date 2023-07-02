@@ -1,40 +1,36 @@
 # Online Results Check
 
-This template should help get you started developing with Vue 3 in Vite.
+This is an online results query service template. Built using Vue 3 + Typescript + Pinia + Vue Router 4 + Flask + MongoDB
 
-## Recommended IDE Setup
+You are free to copy and use this template. You can change this template as well, as long as you indicate the original author (For example, paste the github link of this work to the website that you are going to post your modified work).
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+server.py is the server file, built using flask.
+admin.py is the admin panel. You can use this, however, it is recommended that you follow the basic code
 
-## Type Support for `.vue` Imports in TS
+May I remind you that this source code itself is **NOT PRODUCTION READY**. To make it production ready, refer to this site: https://flask.palletsprojects.com/en/2.1.x/tutorial/deploy/
+## Install
+Clone this respository from github. 
+You can also download the source code and put it somewhere in your computer.
+You also need to install python. I used python 3.11 while writing this piece of code. It is recommended that you download the same version of python as me.
+Then, you need to run the following:
+``
+pip install pymongo
+``
+``
+pip install flask
+``
+``
+pip install flask-cors
+``
+You also need to install MongoDB. You can download it here, on their official website: https://www.mongodb.com/download-center/community/releases
+After installing it, connect it and create a database called ``results_query``, with 
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Don't forget to download node.js! https://nodejs.org/en/download
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+That should be all the things that you need to install.
+## Run
+Run this code:
+``
 npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+``
+and run server.py.
