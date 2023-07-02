@@ -1,5 +1,6 @@
 # Online Results Check
-![image](https://github.com/boypu123/online-results-check/assets/62825102/8f94c930-ed15-4e22-b246-73bd929f2085)
+![image](https://github.com/boypu123/online-results-check/assets/62825102/90a8342d-5267-4a7b-847e-bb1effb2d02d)
+
 
 This is an online results query service template. Built using Vue 3 + Typescript + Pinia + Vue Router 4 + Flask + MongoDB
 
