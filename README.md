@@ -5,9 +5,10 @@ This is an online results query service template. Built using Vue 3 + Typescript
 You are free to copy and use this template. You can change this template as well, as long as you indicate the original author (For example, paste the github link of this work to the website that you are going to post your modified work).
 
 server.py is the server file, built using flask.
-admin.py is the admin panel. You can use this, however, it is recommended that you follow the basic code
+admin.py is the admin panel. You can use this, however, it is recommended that you follow the basic code and create your own admin panel.
 
 May I remind you that this source code itself is **NOT PRODUCTION READY**. To make it production ready, refer to this site: https://flask.palletsprojects.com/en/2.1.x/tutorial/deploy/
+
 ## Install
 Clone this respository from github. 
 You can also download the source code and put it somewhere in your computer.
@@ -23,14 +24,30 @@ pip install flask
 pip install flask-cors
 ``
 You also need to install MongoDB. You can download it here, on their official website: https://www.mongodb.com/download-center/community/releases
-After installing it, connect it and create a database called ``results_query``, with 
 
 Don't forget to download node.js! https://nodejs.org/en/download
 
+Then you need to run start.py to do some initialisation work.
+
 That should be all the things that you need to install.
+
 ## Run
 Run this code:
 ``
 npm run dev
 ``
-and run server.py.
+and run server.py just like how you run a normal python file.
+
+## Reminders
+Sometimes the port of the node.js server may not be 5174. In this case, go to server.py, modify every http://localhost:5174 to http://localhost:{insert the port where node.js server is running here}
+
+## Future Plans
+Add i18n support maybe.
+
+Have any more questions?
+Email me @:
+boypu9673@gmail.com
+boypu123@outlook.com
+
+WeChat me @:
+boypu123
