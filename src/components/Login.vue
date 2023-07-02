@@ -1,8 +1,12 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue'
-import Login from '../components/Login.vue'
 import { sha256 } from 'js-sha256'
 import axios from 'axios'
+// Access store to get out user information
+import { useUserStore } from '@/stores/user'
+import appRouter from '@/router'
+const store = useUserStore()
+
 // Since we declared the two values as null, we need to pre-declare the type of the two values by using interface
 interface UserDetailsType{
     username: String | null
@@ -24,8 +28,19 @@ function sendData(){
             }
         })
             .then(function(response){
-                if(response.data.passed == True){
-                    console.log("redirect")
+                message.value = response.data.message
+                // If status == OK (means successful login)
+                if(response.data.status == "OK"){
+                    // Then get out the message and display it
+                    // Update the pinia store
+                    store.$patch({
+                        username: userDetails.username,
+                        name: response.data.name,
+                        candidateNumber: response.data.candidateNum, 	// The candidate number from the server.
+                        centre: response.data.centre
+                    })
+                    console.log('更改成功')
+                    appRouter.push('/results');
                 }
             })
     }
@@ -40,8 +55,9 @@ function sendData(){
         <!-- The Login Form -->
         <form id="Login">
             <input type="text" placeholder=" Username" class="InputBoxes" v-model="userDetails.username"> <br>
-            <input type="text" placeholder=" Password" class="InputBoxes" v-model="userDetails.password"> <br>
+            <input type="password" placeholder=" Password" class="InputBoxes" v-model="userDetails.password"> <br>
             {{ message }}
+            <!-- Submit Button -->
             <div id="Submit" @click="sendData()">Submit</div>
         </form>
     </div>

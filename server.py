@@ -1,35 +1,68 @@
-from flask import Flask, request
-from flask_cors import CORS, cross_origin
 from pymongo import MongoClient
-import jsonify
 import logging
-import datetime
+from flask import Flask, request, jsonify, Response
+from flask_cors import CORS, cross_origin
 
+# The basic config of logging
+logging.basicConfig(
+    filename = 'log.txt',
+    format = '%(asctime)s: %(levelname)s - %(message)s'
+)
 # Connect to mongoDB database
 client = MongoClient("localhost", 27017)
 db = client.results_query
 
-# Initialisation
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173"])
+CORS(app, origins=["http://localhost:5174"])
 
-# The login method to handle login
-@app.route('/login', methods = ['POST'])
+@app.route('/login', methods=['POST', 'OPTIONS'])
 def login():
+    # Handle CORS
+    if request.method == 'OPTIONS':
+        headers = {
+            'Access-Control-Allow-Origin': 'http://localhost:5174',
+            'Access-Control-Allow-Methods': 'POST',
+            'Access-Control-Allow-Headers': 'Content-Type'
+        }
+        return ('', 204, headers)
 
-    username = request.json['username']
-    password = request.json['password']
-    if (db.username.find_one({'username': username, 'password': password})):
-        response = jsonify({'passed': True, 'message': 'Your login creditals are correct. Redirecting.'})
-        response.headers.add('Access-Control-Allow-Origin', 'http://127.0.0.1:5173')
+    # Get username & password
+    username = str(request.json['username'])
+    password = str(request.json['password'])
+    query_details = db.login.find_one({'username': username, 'password': password})
+    if (query_details != None):
+        response = jsonify({'status': 'OK', 
+                            'message': 'Your login creditals are correct. Redirecting.', 
+                            'name': query_details['name'],
+                            'candidateNum': query_details['candidateNum'],
+                            'centre': query_details['centre']})
+        # Log into the log
+        logging.info('{} have successfully logged in.'.format(query_details['username']))
         return response
     else:
-        response = jsonify({'passed': False, 'message': 'Your login creditals are incorrect. Try again.'})
-        response.headers.add('Access-Control-Allow-Origin', 'http://127.0.0.1:5173')
+        response = jsonify({'status': 'Blocked', 'message': 'Your login creditals are incorrect. Try again.'})
+        # Log into the
+        logging.error('A person did not login successfully. The login creditals are incorrect. The username provided is: {}'.format(username))
         return response
+
+
+CORS(app, origins=["http://localhost:5174"])
+@app.route('/results', methods = ['POST','OPTIONS'])
+def results():
+    if request.method == 'OPTIONS':
+        headers = {
+            'Access-Control-Allow-Origin': 'http://localhost:5174',
+            'Access-Control-Allow-Methods': 'POST',
+            'Access-Control-Allow-Headers': 'Content-Type'
+        }
+        return ('', 204, headers)
     
+    username = str(request.json['username'])
+    print(username)
+    return str(db.results.find_one({'username':username}))
+
 
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run('localhost', port='5000', debug=True)

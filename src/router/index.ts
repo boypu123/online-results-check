@@ -16,11 +16,6 @@ const router = createRouter({
       name: 'Results Check',
       component: ResultsCheck
     },
-    {
-      path: '/admin',
-      name: 'Admin',
-      component: AdminView
-    },
   ]
 })
 

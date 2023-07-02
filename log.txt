@@ -1,0 +1,64 @@
+2023-07-02 14:06:57,733: INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2023-07-02 14:06:57,733: INFO - [33mPress CTRL+C to quit[0m
+2023-07-02 14:06:57,740: INFO -  * Restarting with stat
+2023-07-02 14:06:58,114: WARNING -  * Debugger is active!
+2023-07-02 14:06:58,116: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 14:07:25,827: INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2023-07-02 14:07:25,827: INFO - [33mPress CTRL+C to quit[0m
+2023-07-02 14:07:25,828: INFO -  * Restarting with stat
+2023-07-02 14:07:26,214: WARNING -  * Debugger is active!
+2023-07-02 14:07:26,216: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 14:07:38,085: INFO - 127.0.0.1 - - [02/Jul/2023 14:07:38] "[35m[1mOPTIONS /login HTTP/1.1[0m" 204 -
+2023-07-02 14:07:38,350: INFO - 127.0.0.1 - - [02/Jul/2023 14:07:38] "POST /login HTTP/1.1" 200 -
+2023-07-02 14:07:53,790: INFO -  * Detected change in 'd:\\Codes\\Online Results Check\\server.py', reloading
+2023-07-02 14:07:54,271: INFO -  * Restarting with stat
+2023-07-02 14:07:59,929: INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2023-07-02 14:07:59,929: INFO - [33mPress CTRL+C to quit[0m
+2023-07-02 14:07:59,932: INFO -  * Restarting with stat
+2023-07-02 14:08:00,274: WARNING -  * Debugger is active!
+2023-07-02 14:08:00,276: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 14:08:03,301: INFO -  * Detected change in 'd:\\Codes\\Online Results Check\\server.py', reloading
+2023-07-02 14:08:03,808: INFO -  * Restarting with stat
+2023-07-02 14:08:04,152: WARNING -  * Debugger is active!
+2023-07-02 14:08:04,155: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 14:08:11,480: INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2023-07-02 14:08:11,481: INFO - [33mPress CTRL+C to quit[0m
+2023-07-02 14:08:11,482: INFO -  * Restarting with stat
+2023-07-02 14:08:11,822: WARNING -  * Debugger is active!
+2023-07-02 14:08:11,824: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 14:09:49,706: INFO - 127.0.0.1 - - [02/Jul/2023 14:09:49] "OPTIONS /results-query HTTP/1.1" 200 -
+2023-07-02 14:09:49,966: INFO - 127.0.0.1 - - [02/Jul/2023 14:09:49] "[31m[1mGET /results-query HTTP/1.1[0m" 400 -
+2023-07-02 14:10:14,116: INFO - 127.0.0.1 - - [02/Jul/2023 14:10:14] "[35m[1mOPTIONS /login HTTP/1.1[0m" 204 -
+2023-07-02 14:10:14,431: INFO - 127.0.0.1 - - [02/Jul/2023 14:10:14] "POST /login HTTP/1.1" 200 -
+2023-07-02 14:10:14,688: INFO - 127.0.0.1 - - [02/Jul/2023 14:10:14] "OPTIONS /results-query HTTP/1.1" 200 -
+2023-07-02 14:10:14,782: INFO - 127.0.0.1 - - [02/Jul/2023 14:10:14] "[31m[1mGET /results-query HTTP/1.1[0m" 400 -
+2023-07-02 14:11:28,585: INFO -  * Detected change in 'd:\\Codes\\Online Results Check\\server.py', reloading
+2023-07-02 14:11:29,048: INFO -  * Restarting with stat
+2023-07-02 14:11:29,538: WARNING -  * Debugger is active!
+2023-07-02 14:11:29,541: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 14:11:57,758: INFO - 127.0.0.1 - - [02/Jul/2023 14:11:57] "[35m[1mOPTIONS /login HTTP/1.1[0m" 204 -
+2023-07-02 14:11:58,022: INFO - 127.0.0.1 - - [02/Jul/2023 14:11:58] "POST /login HTTP/1.1" 200 -
+2023-07-02 14:11:58,070: INFO - 127.0.0.1 - - [02/Jul/2023 14:11:58] "OPTIONS /results-query HTTP/1.1" 200 -
+2023-07-02 14:11:58,378: INFO - 127.0.0.1 - - [02/Jul/2023 14:11:58] "[31m[1mGET /results-query HTTP/1.1[0m" 400 -
+2023-07-02 14:12:22,754: INFO -  * Detected change in 'd:\\Codes\\Online Results Check\\server.py', reloading
+2023-07-02 14:12:23,151: INFO -  * Restarting with stat
+2023-07-02 14:12:23,595: WARNING -  * Debugger is active!
+2023-07-02 14:12:23,598: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 14:12:34,396: INFO - 127.0.0.1 - - [02/Jul/2023 14:12:34] "[35m[1mOPTIONS /login HTTP/1.1[0m" 204 -
+2023-07-02 14:12:34,662: INFO - 127.0.0.1 - - [02/Jul/2023 14:12:34] "POST /login HTTP/1.1" 200 -
+2023-07-02 14:12:34,708: INFO - 127.0.0.1 - - [02/Jul/2023 14:12:34] "OPTIONS /results HTTP/1.1" 200 -
+2023-07-02 14:12:35,018: INFO - 127.0.0.1 - - [02/Jul/2023 14:12:35] "[31m[1mGET /results HTTP/1.1[0m" 400 -
+2023-07-02 14:14:05,963: INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2023-07-02 14:14:05,963: INFO - [33mPress CTRL+C to quit[0m
+2023-07-02 14:14:05,964: INFO -  * Restarting with stat
+2023-07-02 14:14:06,308: WARNING -  * Debugger is active!
+2023-07-02 14:14:06,310: INFO -  * Debugger PIN: 571-313-396
+2023-07-02 14:14:18,910: INFO - 127.0.0.1 - - [02/Jul/2023 14:14:18] "[33mGET / HTTP/1.1[0m" 404 -
+2023-07-02 14:14:35,086: INFO -  * Detected change in 'd:\\Codes\\Online Results Check\\server.py', reloading
+2023-07-02 14:14:35,565: INFO -  * Restarting with stat
+2023-07-02 14:14:43,168: INFO -  * Restarting with stat
